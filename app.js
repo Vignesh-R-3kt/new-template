@@ -41,7 +41,7 @@ $(function () {
         html2canvas(container, { scale: 10 }).then(function (canvas) {
             let downloadLink = document.createElement('a');
             downloadLink.href = canvas.toDataURL('image/png');
-            downloadLink.download = 'meme.png';
+            downloadLink.download = `${nameInput.val()}.png`;
             downloadLink.click();
         })
     })
