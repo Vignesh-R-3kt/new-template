@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>Welcome Template</h1>
+
+    <div class="container input-wrapper">
+        <div class="wrapper">
+            <div class="file-wrapper">
+                <div class="img-wrapper">
+                    <img src="./assets/icons8-attachment-96.png" alt="">
+                    <span>Image</span>
+                </div>
+                <input type="file" class="file img-input">
+            </div>
+            <input type="text" placeholder="Name" class="name-input">
+            <input type="text" placeholder="Designation" class="designation-input">
+            <input type="text" placeholder="Project" class="project-input">
+            <input type="text" placeholder="Date of Joining" class="doj-input">
+        </div>
+    </div>
+
+    <div class="container output-wrapper">
+        <div class="wrapper">
+            <div class="img-controls">
+                <div class="scale-wrapper">
+                    <p>Scale</p>
+                    <input type="range" class="scale-controller" value="1" min="1" max="2" step="0.1">
+                </div>
+                <div class="x-position-wrapper">
+                    <p><span>Adjust</span> <img src="./assets/icons8-resize-horizontal-96.png" alt=""></p>
+                    <input type="range" class="x-controller" min="-200" max="200" step="1">
+                </div>
+                <div class="x-position-wrapper">
+                    <p><span>Adjust</span> <img src="./assets/icons8-resize-vertical-96.png" alt=""></p>
+                    <input type="range" class="y-controller" min="-200" max="200" step="1">
+                </div>
+            </div>
+            <div class="output-image-wrapper">
+                <div class="top-block-1"></div>
+                <div class="bottom-block-1"></div>
+                <div class="logo-wrapper">
+                    <img src="./assets/3KT-Logo 3.png" alt="logo">
+                </div>
+                <div class="profile-pic-wrapper">
+                    <div class="img-wrapper">
+                        <img src="./assets/pp.png" alt="profile-img">
+                    </div>
+                    <div class="logo-color-box"></div>
+                    <div class="welcome-msg-wrapper">
+                        <h3 class="text-1">WELCOME TO</h3>
+                        <h3 class="text-2">THE</h3>
+                        <h3 class="text-3">TEAM</h3>
+                    </div>
+                </div>
+                <h2 class="name-text">Lorem, ipsum.</h2>
+                <h2 class="designation-text">Lorem, ipsum.</h2>
+                <p class="project-text detail-text">Project : <span>Lorem, ipsum.</span></p>
+                <p class="doj-text detail-text">Date of Joining : <span>Lorem, ipsum.</span></p>
+
+                <div class="lines-container">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+                <p class="email-text">www.3ktechnologies.com</p>
+            </div>
+            <div class="download-btn">
+                <button>
+                    <img src="./assets/icons8-download-48.png" alt="">
+                    <span>Download</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</body>
+
+</html>
